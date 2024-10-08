@@ -76,6 +76,11 @@ class Loja:
         else:
             print("O usuário já foi adicionado antes")
 
+    def show_users(self):
+        for usuario in self.usuarios:
+            print(f"Name:{usuario.nome.title()}\nEmail:{usuario.email.title()}")
+
+
 
 headphone = Produto("Headphone", 120000000, 2)
 tshirt= Produto("T-SHIRT", 1000, 3)
@@ -96,3 +101,8 @@ print(
     "======================================================================================================================================")
 
 user1.visualizar_Carrinho()
+loja.show_users()
+
+
+
+
